@@ -36,12 +36,27 @@ I want to see the history (operation, date, amount, balance) of my operations
 ###
 POST http://localhost:8080/client/create
 
+{
+    "client_id":1,
+    "name":"Toto",
+    "last_name":"TOTO",
+    "birthday":"1995-07-09",
+    "history":"History"
+
+}
+
 ###
 GET /account
 
 ###
 POST http://localhost:8080/account/createAccount/{{id}}
+{
+   "account_id":1,
+   "balance":2000.00,
+   "amount":00.00,
+   "date":"2021-04-14"
 
+}
 ###
 GET /client
 
